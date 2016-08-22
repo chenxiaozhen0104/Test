@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="wrap/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="wrap/two.css"/>
+		<link rel="stylesheet" type="text/css" href="wrap/three.css"/>
+		<link rel="stylesheet" type="text/css" href="wrap/fore.css"/>
+		<link rel="stylesheet" type="text/css" href="wrap/xiangce.css"/>
+		<style type="text/css">
+			html,body,.swiper-container,.swiper-wrapper{
+				width: 100%;
+				height: 100%;
+			}
+			*{
+				margin: 0;
+				padding: 0;
+				-webkit-transform: translate3d(0, 0, 0);
+			}
+			.swiper-slide{
+				width: 100%;
+				height: 100%;
+				/*background: red;*/
+				font-size: 16px;
+			}
+			.one{
+				background: #7BCDEA;
+				overflow: hidden;
+			}
+			.one_bg{
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				background-image: url(img/2/2-bg.png);
+				background-size: cover;
+				opacity: 1;
+			}
+			.cloud1{
+				position: absolute;
+				width: 60%;
+				left: -60%;
+				top: 10%;
+				-webkit-transition: all 1s;
+			}
+			.cloud2{
+				position: absolute;
+				width: 60%;
+				right: -50%;
+				top: 30%;
+				-webkit-transition: all 1s;
+			}
+			.silk{
+				position: absolute;
+				top: 25%;
+				left: 34%;
+				width: 32%;
+				opacity: 0;
+				-webkit-transition: all 1s;
+			}
+			.text1{
+				position: absolute;
+				width: 100%;
+				top: 55%;
+				height: 15%;
+				color: #fff;
+				text-align: center;
+				opacity: 0;
+				-webkit-transition: all 1s;
+			}
+			.text1 p{
+				margin-bottom: 1.5%;
+			}
+			.text1 p:nth-child(1),.text1 p:nth-child(3){
+				color: #edb92f;
+				font-size: 0.35rem;
+			}
+			.text2{
+				position: absolute;
+				width: 100%;
+				top: 81.4%;
+				height: 5%;
+				color: #fff;
+				text-align: center;
+				opacity: 0;
+				-webkit-transition: all 1s;
+			}
+			.text2 p:nth-child(2){
+				color: #edb92f;
+				font-size: 0.35rem;
+			}
+			.shang{
+				position: absolute;
+				top: 90%;
+				left: 47.5%;
+				width: 5%;
+			}
+			.shang img:nth-child(1){
+				top: 10%;
+				-webkit-animation: shang 1s infinite;
+			}
+			.shang img:nth-child(2){
+				position: absolute;
+				top: 45%;
+				-webkit-animation: shang 1s infinite;
+			}
+			.shang img:nth-child(3){
+				position: absolute;
+				top: 90%;
+				-webkit-animation: shang 1s infinite;
+			}
+			@-webkit-keyframes shang{
+				from{
+					-webkit-transform: translate(0,0px);
+				}
+				50%{
+					opacity: 0.5;
+					-webkit-transform: translate(0,5px);
+				}
+				to{
+					-webkit-transform: translate(0,0px);
+				}
+			}
+			.nine video{
+				position: absolute;
+				top:-10%;
+				left: 0;
+			}
+			.one_mask{
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				background: #fff;
+				z-index: 1000;
+				text-align: center;
+				/*display: none;*/
+			}
+			.one_mask img{
+				width: 150px;
+				margin: 200px auto;
+			}
+			.one_mask span{
+				position: absolute;
+				display: inline-block;
+				width: 150px;
+				height: 150px;
+				top: 200px;
+				left: 50%;
+				margin-left: -75px;
+				font-size: 0.3rem;
+				line-height: 150px;
+			}
+		</style>
+	</head>
+	<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+	<body>
+		<div class="one_mask">
+			<img src="img/load.gif" alt="" />
+			<span></span>
+		</div>
+		<div class="container swiper-container">
+			<div class="swiper-wrapper">
+				<div class="one swiper-slide">
+					<div class="one_bg"></div>
+					
+					<img class="cloud1" src="img/2/2-云-left.png" alt="" />
+					<img class="cloud2" src="img/2/2-云-right.png" alt="" />
+					<img class="silk" src="img/2/2-丝绸之路-logo.png" alt="" />
+					<div class="shang">
+						<img src="img/2/2-上划线1.png" alt="" />
+						<img src="img/2/2-上划线1.png" alt="" />
+						<img src="img/2/2-上划线1.png" alt="" />
+					</div>
+					<div class="text1">
+						<p>BEAUTIFUL CHINA</p>
+						<p>2015</p>
+						<p>YEAFDF SILDE FLLIN SILL</p>
+						<p>美丽中国 2015丝绸之路旅游年</p>
+					</div>
+					<div class="text2">
+						<p>中国国家旅游局</p>
+						<p>China NaDcod ovsin Adongjlj</p>
+					</div>
+				</div>
+				<div class="two swiper-slide">
+					
+				</div>
+				<div class="three swiper-slide">
+					<img src="img/1/1主形象.jpg" alt="" />
+				</div>
+				<div class="fore swiper-slide">
+					
+				</div>
+				<div class="five swiper-slide">
+					<img src="img/6-mainPosterContent/poster2.png" alt="" />
+				</div>
+				<div class="six swiper-slide">
+					
+				</div>
+				
+				<div class="seven swiper-slide">
+					<div class="photo_mask">
+						<span>0%</span>
+						<img src="img/load.gif"/>
+					</div>
+					<span class="photo_close">X</span>
+					<img class="show" src="img/fujian.jpg"/>
+					<img class="progress" src="img/9/progress.png"/>
+					<div class="progress_line"></div>
+					<div class="photoWrap">
+						<img class="animated photo photo_one" src="img/chongqing.jpg"/>
+						<img class="animated photo photo_two" src="img/fujian.jpg"/>
+						<img class="animated photo photo_three" src="img/gansu.jpg"/>
+						<img class="animated photo photo_fore" src="img/guangdong.jpg"/>
+					</div>
+				</div>
+				<div class="eight swiper-slide">
+					
+				</div>
+				<div class="nine swiper-slide">
+					<video width="100%" height="100%">
+						<source src="http://lcks.applinzi.com/1.mp4" type="video/mp4"></source>
+						当前浏览器不支持 video直接播放，点击这里下载视频 </a>
+					</video>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	
+	<script src="js/touch.js" type="text/javascript" charset="utf-8"></script>
+	<script src="wrap/two.js" type="text/javascript" charset="utf-8"></script>
+	<script src="wrap/three.js" type="text/javascript" charset="utf-8"></script>
+	<script src="wrap/fore.js" type="text/javascript" charset="utf-8"></script>
+	<script src="wrap/five.js" type="text/javascript" charset="utf-8"></script>
+	<script src="wrap/six.js" type="text/javascript" charset="utf-8"></script>
+	<script src="wrap/eight.js" type="text/javascript" charset="utf-8"></script>
+	<script src="wrap/xiangce.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//load
+
+		
+		var imgArr = ['img/2/2-云-left.png',
+				'img/2/2-云-right.png',
+				'img/2/2-丝绸之路-logo.png',
+				'img/2/2-上划线1.png',
+				'img/1/1主形象.jpg',
+				'img/6-mainPosterContent/poster2.png',
+				'img/fujian.jpg',
+				'img/9/progress.png',
+				'img/chongqing.jpg',
+				'img/gansu.jpg',
+				'img/guangdong.jpg'
+				];
+//load
+var len = 0;
+for(var i=0;i<imgArr.length;i++){
+	var img = new Image();
+	img.src = imgArr[i];
+	img.onload = function(){
+		len++;
+		var scale = parseInt(100*len/imgArr.length);
+		$(".one_mask span").html(scale+"%");
+		if(len>=imgArr.length){
+			$(".one_mask").css({"display":"none"});
+			$(".text1").css({"opacity":"1"});
+			$(".text2").animate({"opacity":"1"},function(){
+				$(".cloud1").css({"left":"0"});
+				$(".cloud2").css({"right":"-2%"});
+				$(".silk").css({"opacity":"1"});
+			});
+		}
+	}
+}
+			
+		var mySwiper = new Swiper ('.swiper-container', {
+			initialSlide : 0,
+			longSwipesRatio : 0.000000000001,
+		    direction: 'vertical',
+		    loop: true,
+	    		effect : 'cube',
+			cube: {
+			  	slideShadows: false,
+			  	shadow: false,
+			 	shadowOffset: 100,
+	  			shadowScale: 0.6
+			},
+			
+			onSlideChangeEnd: function(swiper){
+				var index = swiper.activeIndex;
+				if (index==1) {
+					$(".two").html("");
+		      	}
+				if (index==2) {
+					$(".two").html("");
+		      		startLine();
+		      		$(".three .line").remove();
+		      		$(".three .dot").remove();
+		      }
+		      	if (index==3) {
+		      		$(".two").html("");
+		      		$(".fore").html("");
+		      		threeLine();
+		      	}
+		      	if (index==4) {
+		      		$(".five .line").remove();
+		      		$(".five .dot").remove();
+		      		$(".three .line").remove();
+		      		$(".three .dot").remove();
+		      		startLine4();
+		      	}
+		      	if (index==5) {
+		      		$(".fore").html("");
+		      		$(".six").html("");
+		      		fiveLine();
+		      	}
+		      	if (index==6) {
+		      		$(".five .line").remove();
+		      		$(".five .dot").remove();
+		      		startLine6()
+		      	}
+		      	if (index==7) {
+		      		$(".six").html("");
+		      		$(".eight").html("");
+		      		photoMask();
+		      	}
+		      	if (index==8) {
+		      		startLine8()
+		      	}
+		      	if (index==9) {
+		      		$(".eight").html("");
+		      	}
+		   }
+	 	}) 
+	</script>
+</html>
